@@ -1,48 +1,48 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const LuciferApp());
+void main() => runApp(const SnackBarDemo());
 
-class LuciferApp extends StatelessWidget {
-  const LuciferApp({Key? key}) : super(key: key);
+class SnackBarDemo extends StatelessWidget {
+  const SnackBarDemo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      title: 'انرژی مثبت',
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.teal,
-          //  bottom: AssetImage("images/dd.jpg"), size check shavad
-          title: const Text("lucifer app",
-              style: TextStyle(color: Colors.black87)),
+          title: const Text('انرژی مثبت'),
         ),
-        backgroundColor: Colors.blueGrey[500],
-        body: SafeArea(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+        body: const SnackBarPage(),
+      ),
+  debugShowCheckedModeBanner: false,
+    );
+  }
+}
 
-            children: [
-              const CircleAvatar(
-                backgroundColor: Colors.white,
-                radius: 70.0,
-                backgroundImage: AssetImage('images/dd.jpg'),
-              ),
-              Text(
-                "evil",
-                style: TextStyle(color: Colors.yellow, fontSize: 20.0,
+class SnackBarPage extends StatelessWidget {
+  const SnackBarPage({Key? key}) : super(key: key);
 
-                fontFamily: 'Bsari',
-                  fontWeight: FontWeight.w700
-                ),
-              ),
-              Text("daram flTTER yad migiram",style: TextStyle(fontSize:30.0,color: Colors.lightBlue,fontFamily:'alis',fontWeight:FontWeight.bold,letterSpacing: 2.5),)
-              
-            ],
-          ),
-        ),
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ElevatedButton(
+        onPressed: () {
+          final snackBar = SnackBar(
+            content: const Text('🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕 به تو محسن'),
+            action: SnackBarAction(
+              label: 'Undo',
+              onPressed: () {
+                // Some code to undo the change.
+              },
+            ),
+          );
+
+          // Find the ScaffoldMessenger in the widget tree
+          // and use it to show a SnackBar.
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        },
+        child: const Text('برای دریافت انرژی مثبت کلیک کنید'),
       ),
     );
   }
