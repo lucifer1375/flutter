@@ -14,6 +14,7 @@ void main() =>runApp(const MaterialApp(
    Widget build(BuildContext context) {
      return MaterialApp(
        home: Scaffold(
+         backgroundColor:Colors.yellow,
          appBar: AppBar(
            centerTitle: true,
            title: Text ('lucy(1)',style: TextStyle(fontSize: 25.0),),
@@ -22,9 +23,19 @@ void main() =>runApp(const MaterialApp(
          ),
          body: Container(
            color:Colors.redAccent,
+           child: Row(
+             children: [
+               Expanded(child:Image(image:AssetImage('images/dd.jpg')) 
+               ),
+Expanded(child: Image(image:AssetImage('images/dd.jpg'),))
+
+             ],
+           ),
          ),
        ),
+
      );
+
    }
  }
  
