@@ -22,33 +22,31 @@ class Tas extends StatelessWidget {
           backgroundColor: Colors.teal,
         ),
         body: Center(
-          child:Row(
+          child: Row(
             children: const [
-              Expanded(
-
-                  child: Image(image: AssetImage('images/2.jpg'))),
+              Expanded(child: Image(image: AssetImage('images/2.jpg'))),
               Expanded(
                   child: Image(
-                    image: AssetImage('images/1.jpg'),
-                  )),
+                image: AssetImage('images/1.jpg'),
+              )),
               Expanded(
                   child: Image(
-                    image: AssetImage('images/3.jpg'),
-                  )),
+                image: AssetImage('images/3.jpg'),
+              )),
               Expanded(
                   child: Image(
-                    image: AssetImage('images/4.jpg'),
-                  )),
+                image: AssetImage('images/4.jpg'),
+              )),
               Expanded(
                   child: Image(
-                    image: AssetImage('images/5.jpg'),
-                  )),
+                image: AssetImage('images/5.jpg'),
+              )),
               Expanded(
                   child: Image(
-                    image: AssetImage('images/6.jpg'),
-                  )),
+                image: AssetImage('images/6.jpg'),
+              )),
             ],
-          ) ,
+          ),
         ),
       ),
     );
