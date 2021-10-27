@@ -26,11 +26,27 @@ class Tas extends StatelessWidget {
             children: const [
               Expanded(
 
-                  child: Image(image: AssetImage('images/dd.jpg'))),
+                  child: Image(image: AssetImage('images/2.jpg'))),
               Expanded(
                   child: Image(
-                    image: AssetImage('images/dd.jpg'),
-                  ))
+                    image: AssetImage('images/1.jpg'),
+                  )),
+              Expanded(
+                  child: Image(
+                    image: AssetImage('images/3.jpg'),
+                  )),
+              Expanded(
+                  child: Image(
+                    image: AssetImage('images/4.jpg'),
+                  )),
+              Expanded(
+                  child: Image(
+                    image: AssetImage('images/5.jpg'),
+                  )),
+              Expanded(
+                  child: Image(
+                    image: AssetImage('images/6.jpg'),
+                  )),
             ],
           ) ,
         ),
